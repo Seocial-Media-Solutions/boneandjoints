@@ -131,11 +131,12 @@ export default async function sitemap() {
     "/blog/types-of-joint-pain-treatments-ajmer-dr-abhishek-saxena",
     "/blog/how-to-keep-bones-strong-after-40-ajmer-dr-abhishek-saxena",
     "/blog/back-pain-vs-spine-pain-difference-ajmer-dr-abhishek-saxena",
-     "/blog/natural-ways-relieve-joint-pain-without-medication-ajmer-dr-abhishek-saxena",
-       "/blog/sciatica-pain-treatment-ajmer-dr-abhishek-saxena",
-       "/blog/how-to-prevent-lower-back-pain-ajmer-dr-abhishek-saxena",
-       "/blog/foods-that-strengthen-bones-joints-advice-dr-abhishek-saxena",
-       "/blog/bone-pain-vs-muscle-pain-how-to-identify"
+    "/blog/natural-ways-relieve-joint-pain-without-medication-ajmer-dr-abhishek-saxena",
+    "/blog/sciatica-pain-treatment-ajmer-dr-abhishek-saxena",
+    "/blog/how-to-prevent-lower-back-pain-ajmer-dr-abhishek-saxena",
+    "/blog/foods-that-strengthen-bones-joints-advice-dr-abhishek-saxena",
+    "/blog/bone-pain-vs-muscle-pain-how-to-identify",
+    "/blog/back-pain-reasons-diagnosis-treatment"
   ].map((path) => ({
     url: `${baseUrl}${path}`,
     lastModified: currentDate,
