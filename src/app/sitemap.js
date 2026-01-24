@@ -136,7 +136,8 @@ export default async function sitemap() {
     "/blog/how-to-prevent-lower-back-pain-ajmer-dr-abhishek-saxena",
     "/blog/foods-that-strengthen-bones-joints-advice-dr-abhishek-saxena",
     "/blog/bone-pain-vs-muscle-pain-how-to-identify",
-    "/blog/back-pain-reasons-diagnosis-treatment"
+    "/blog/back-pain-reasons-diagnosis-treatment",
+    "/blog/what-is-slip-disc-symptoms-causes-treatment"
   ].map((path) => ({
     url: `${baseUrl}${path}`,
     lastModified: currentDate,
