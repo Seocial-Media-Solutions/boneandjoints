@@ -137,7 +137,8 @@ export default async function sitemap() {
     "/blog/foods-that-strengthen-bones-joints-advice-dr-abhishek-saxena",
     "/blog/bone-pain-vs-muscle-pain-how-to-identify",
     "/blog/back-pain-reasons-diagnosis-treatment",
-    "/blog/what-is-slip-disc-symptoms-causes-treatment"
+    "/blog/what-is-slip-disc-symptoms-causes-treatment",
+    "/blog/how-to-choose-best-orthopedic-surgeon-in-ajmer"
   ].map((path) => ({
     url: `${baseUrl}${path}`,
     lastModified: currentDate,
