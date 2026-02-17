@@ -138,7 +138,8 @@ export default async function sitemap() {
     "/blog/bone-pain-vs-muscle-pain-how-to-identify",
     "/blog/back-pain-reasons-diagnosis-treatment",
     "/blog/what-is-slip-disc-symptoms-causes-treatment",
-    "/blog/how-to-choose-best-orthopedic-surgeon-in-ajmer"
+    "/blog/how-to-choose-best-orthopedic-surgeon-in-ajmer",
+    "/blog/knee-pain-causes-advanced-treatment-options-ajmer"
   ].map((path) => ({
     url: `${baseUrl}${path}`,
     lastModified: currentDate,
