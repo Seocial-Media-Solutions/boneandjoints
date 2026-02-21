@@ -139,7 +139,8 @@ export default async function sitemap() {
     "/blog/back-pain-reasons-diagnosis-treatment",
     "/blog/what-is-slip-disc-symptoms-causes-treatment",
     "/blog/how-to-choose-best-orthopedic-surgeon-in-ajmer",
-    "/blog/knee-pain-causes-advanced-treatment-options-ajmer"
+    "/blog/knee-pain-causes-advanced-treatment-options-ajmer",
+    "/blog/post-fracture-recovery-tips-orthopedic-guide-ajmer",
   ].map((path) => ({
     url: `${baseUrl}${path}`,
     lastModified: currentDate,
