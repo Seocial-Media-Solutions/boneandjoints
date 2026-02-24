@@ -141,6 +141,7 @@ export default async function sitemap() {
     "/blog/how-to-choose-best-orthopedic-surgeon-in-ajmer",
     "/blog/knee-pain-causes-advanced-treatment-options-ajmer",
     "/blog/post-fracture-recovery-tips-orthopedic-guide-ajmer",
+    "/blog/how-to-speed-up-bone-healing-after-fracture-expert-tips-ajmer",
   ].map((path) => ({
     url: `${baseUrl}${path}`,
     lastModified: currentDate,
