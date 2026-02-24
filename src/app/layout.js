@@ -16,6 +16,7 @@ export default function RootLayout({ children }) {
  return (
    <html lang="en">
      <head>
+       <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
        <Script
          src="https://www.googletagmanager.com/gtag/js?id=G-4DNZQ0ML0V"
          strategy="afterInteractive"

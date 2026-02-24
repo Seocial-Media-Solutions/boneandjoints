@@ -3,8 +3,8 @@ import AllCondition from "@/components/AllConditions";
 import AppointmentSection from "@/components/AppointmentSection";
 import DoctorProfile from "@/components/DoctorProfile";
 import ElfsightWidget from "@/components/ElfsightWidget";
- 
- 
+
+
 import ImageSlider from "@/components/ImageSlider";
 import InstagramEmbed from "@/components/InstagramFeedWidget";
 import StatsComponent from "@/components/StatsComponent";
@@ -39,7 +39,7 @@ export const metadata = {
   alternates: {
     canonical: "https://boneandjoints.in",
   },
-  
+
   twitter: {
     card: "summary_large_image",
     title: "Best Orthopedic Surgeon in Ajmer | Dr. Abhishek Saxena",
@@ -330,16 +330,17 @@ export default function Home() {
           __html: JSON.stringify(structuredData),
         }}
       />
-      
+
       <ImageSlider />
       <DoctorProfile />
+
       <StatsComponent />
-     <Suspense fallback={<div>Loading expertise section...</div>}>
+      <Suspense fallback={<div>Loading expertise section...</div>}>
         <ExpertiseSection />
       </Suspense>
       <WhyChooseUs />
       <Suspense fallback={<div>Loading Gallery section...</div>}>
-      <ImageGallerySlider />
+        <ImageGallerySlider />
       </Suspense>
       <AllCondition />
       <ElfsightWidget />
