@@ -40,7 +40,7 @@ const DeekshitaHomeSection = () => {
                             {/* Image Frame */}
                             <div className="relative rounded-3xl overflow-hidden aspect-[4/5] shadow-2xl border-8 border-white">
                                 <Image
-                                    src="/images/Dikshita.jpeg"
+                                    src="/images/dikshita.jpeg"
                                     alt="Dr. Deekshita Yadav"
                                     fill
                                     className="object-cover"
