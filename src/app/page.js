@@ -1,7 +1,7 @@
 // app/page.jsx
 import AllCondition from "@/components/AllConditions";
 import AppointmentSection from "@/components/AppointmentSection";
-import DoctorProfile from "@/components/DoctorProfile";
+import AbhishekHomeSection from "@/components/AbhishekHomeSection";
 import DeekshitaHomeSection from "@/components/DeekshitaHomeSection";
 import ElfsightWidget from "@/components/ElfsightWidget";
 
@@ -333,7 +333,7 @@ export default function Home() {
       />
 
       <ImageSlider />
-      <DoctorProfile />
+      <AbhishekHomeSection />
       <DeekshitaHomeSection />
 
       <StatsComponent />
