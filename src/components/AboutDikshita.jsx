@@ -13,6 +13,7 @@ import { motion, useInView } from "framer-motion";
    DATA
 ───────────────────────────────────────── */
 const SKILLS = [
+  "Physiotherapy ",
   "Comprehensive patient assessment (musculoskeletal, neurological, and sports-related conditions)",
   "Evidence-based treatment planning and functional rehabilitation",
   "Sports injury assessment and rehabilitation (sprain, strain, ligament injuries, overuse injuries)",
@@ -92,7 +93,7 @@ const listItem = {
 /* ─────────────────────────────────────────
    MAIN COMPONENT
 ───────────────────────────────────────── */
-const AboutDikshita = () => {
+const AboutDeekshita = () => {
   const heroRef = useRef(null);
   const statsRef = useRef(null);
   const skillsRef = useRef(null);
@@ -165,8 +166,8 @@ const AboutDikshita = () => {
                 {/* Image wrapper */}
                 <div className="relative rounded-[2rem] overflow-hidden aspect-[4/5] border border-white/10 shadow-2xl">
                   <Image
-                    src="/images/dikshita.jpeg"
-                    alt="Dr. Dikshita Yadav"
+                    src="/images/Dikshita.jpeg"
+                    alt="Dr. Deekshita Yadav"
                     fill
                     priority
                     className="object-cover object-top"
@@ -213,7 +214,7 @@ const AboutDikshita = () => {
                 style={{ fontFamily: "'Cormorant Garamond', serif" }}
                 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[1.05] mb-4 tracking-tight"
               >
-                Dr. Dikshita
+                Dr. Deekshita
                 <br />
                 <span className="italic font-normal text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-400">
                   Yadav
@@ -494,7 +495,7 @@ const AboutDikshita = () => {
             viewport={{ once: true }}
             className="text-white/65 text-base sm:text-lg leading-relaxed mb-10 max-w-xl mx-auto"
           >
-            Book a consultation with Dr. Dikshita Yadav and take the first step
+            Book a consultation with Dr. Deekshita Yadav and take the first step
             toward lasting wellness and restored movement.
           </motion.p>
 
@@ -534,4 +535,4 @@ const AboutDikshita = () => {
   );
 };
 
-export default AboutDikshita;
+export default AboutDeekshita;

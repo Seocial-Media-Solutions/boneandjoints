@@ -1,22 +1,22 @@
-import AboutDikshita from "@/components/AboutDikshita";
+import AboutDeekshita from "@/components/AboutDikshita";
 
-// Static metadata for Dr. Dikshita Yadav
+// Static metadata for Dr. Deekshita Yadav
 export const metadata = {
-  title: "About Dr. Dikshita Yadav | Consultant Physiotherapist",
+  title: "About Dr. Deekshita Yadav | Consultant Physiotherapist",
   description:
-    "Dr. Dikshita Yadav is a dedicated Consultant Physiotherapist (B.P.T – GMCH, M.I.A.P, C.C.CH) committed to restoring mobility, reducing pain, and improving quality of life through evidence-based rehabilitation.",
+    "Dr. Deekshita Yadav is a dedicated Consultant Physiotherapist (B.P.T – GMCH, M.I.A.P, C.C.CH) committed to restoring mobility, reducing pain, and improving quality of life through evidence-based rehabilitation.",
   keywords:
-    "Dr. Dikshita Yadav, physiotherapist, consultant physiotherapist, physiotherapy Ajmer, sports rehabilitation, neuro rehabilitation, pediatric physiotherapy",
+    "Dr. Deekshita Yadav, physiotherapist, consultant physiotherapist, physiotherapy Ajmer, sports rehabilitation, neuro rehabilitation, pediatric physiotherapy",
   openGraph: {
-    title: "About Dr. Dikshita Yadav | Consultant Physiotherapist",
+    title: "About Dr. Deekshita Yadav | Consultant Physiotherapist",
     description:
-      "Dr. Dikshita Yadav is a dedicated Consultant Physiotherapist committed to restoring mobility and improving quality of life.",
+      "Dr. Deekshita Yadav is a dedicated Consultant Physiotherapist committed to restoring mobility and improving quality of life.",
     images: [
       {
-        url: "/images/dikshita.jpeg",
+        url: "/images/Dikshita.jpeg",
         width: 800,
         height: 600,
-        alt: "Dr. Dikshita Yadav",
+        alt: "Dr. Deekshita Yadav",
       },
     ],
     type: "website",
@@ -27,6 +27,6 @@ export const metadata = {
   },
 };
 
-export default function AboutDikshitaPage() {
-  return <AboutDikshita />;
+export default function AboutDeekshitaPage() {
+  return <AboutDeekshita />;
 }

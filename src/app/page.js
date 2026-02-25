@@ -2,6 +2,7 @@
 import AllCondition from "@/components/AllConditions";
 import AppointmentSection from "@/components/AppointmentSection";
 import DoctorProfile from "@/components/DoctorProfile";
+import DeekshitaHomeSection from "@/components/DeekshitaHomeSection";
 import ElfsightWidget from "@/components/ElfsightWidget";
 
 
@@ -333,6 +334,7 @@ export default function Home() {
 
       <ImageSlider />
       <DoctorProfile />
+      <DeekshitaHomeSection />
 
       <StatsComponent />
       <Suspense fallback={<div>Loading expertise section...</div>}>
