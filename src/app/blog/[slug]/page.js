@@ -157,16 +157,16 @@ export default async function SingleBlogPage({ params }) {
   });
 
   return (
-    <article className="min-h-screen bg-gray-50 lg:pt-20 pt-5 ">
+    <article className="min-h-screen bg-gray-50 lg:pt-1 pt-2 ">
       {/* Hero section with image */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 mt-6">
-        <div className="relative w-full aspect-[3/1] rounded-xl overflow-hidden shadow-lg">
+        <div className="relative w-full aspect-[3/1.5] rounded-xl overflow-hidden shadow-lg">
           <Image
             src={blog.image || "/images/placeholder.jpg"}
             alt={blog.alt || blog.title}
             fill
             priority
-            className="object-cover"
+            className="object-fit"
           />
         </div>
       </div>
