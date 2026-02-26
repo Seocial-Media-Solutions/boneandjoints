@@ -157,26 +157,22 @@ export default async function SingleBlogPage({ params }) {
   });
 
   return (
-    <article className="min-h-screen bg-gray-50">
+    <article className="min-h-screen bg-gray-50 lg:pt-20 pt-5 ">
       {/* Hero section with image */}
-      <div className="relative w-full h-80 md:h-96 max-w-6xl mx-auto mt-6">
-        <Image
-          src={blog.image || "/images/placeholder.jpg"}
-          alt={blog.alt || blog.title}
-          fill
-          priority
-          className="object-fit rounded-lg"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70 rounded-lg"></div>
-        <div className="absolute bottom-0 left-0 right-0 p-6 md:p-12">
-          <h1 className="text-3xl md:text-5xl font-bold text-white mb-2">
-            {blog.heading}
-          </h1>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 mt-6">
+        <div className="relative w-full aspect-[3/1] rounded-xl overflow-hidden shadow-lg">
+          <Image
+            src={blog.image || "/images/placeholder.jpg"}
+            alt={blog.alt || blog.title}
+            fill
+            priority
+            className="object-cover"
+          />
         </div>
       </div>
 
       {/* Content section */}
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12">
         <div className="bg-white rounded-xl shadow-lg overflow-hidden p-6 md:p-10">
           {/* Author and date info */}
           <div className="flex items-center mb-8 pb-4 border-b border-gray-200">
@@ -214,6 +210,10 @@ export default async function SingleBlogPage({ params }) {
           )}
 
           {/* Using our custom BlogContent component */}
+
+          <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-900 to-cyan-400 bg-clip-text text-transparent mb-4">
+            {blog.heading}
+            </h1>
           <BlogContent content={blog.content} />
 
           {/* Back button */}

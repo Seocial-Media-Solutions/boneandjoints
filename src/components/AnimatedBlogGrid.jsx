@@ -26,13 +26,13 @@ const containerVariants = {
 };
 
 const cardVariants = {
-  hidden: { 
-    opacity: 0, 
+  hidden: {
+    opacity: 0,
     y: 50,
     scale: 0.9
   },
-  visible: { 
-    opacity: 1, 
+  visible: {
+    opacity: 1,
     y: 0,
     scale: 1,
     transition: {
@@ -69,12 +69,12 @@ const imageVariants = {
 };
 
 const titleVariants = {
-  hidden: { 
-    opacity: 0, 
-    y: -30 
+  hidden: {
+    opacity: 0,
+    y: -30
   },
-  visible: { 
-    opacity: 1, 
+  visible: {
+    opacity: 1,
     y: 0,
     transition: {
       duration: 0.8,
@@ -84,12 +84,12 @@ const titleVariants = {
 };
 
 const subtitleVariants = {
-  hidden: { 
-    opacity: 0, 
-    y: 20 
+  hidden: {
+    opacity: 0,
+    y: 20
   },
-  visible: { 
-    opacity: 1, 
+  visible: {
+    opacity: 1,
     y: 0,
     transition: {
       duration: 0.8,
@@ -101,8 +101,8 @@ const subtitleVariants = {
 
 const tagVariants = {
   hidden: { scale: 0, opacity: 0 },
-  visible: { 
-    scale: 1, 
+  visible: {
+    scale: 1,
     opacity: 1,
     transition: {
       type: "spring",
@@ -114,8 +114,8 @@ const tagVariants = {
 
 const paginationVariants = {
   hidden: { opacity: 0, y: 20 },
-  visible: { 
-    opacity: 1, 
+  visible: {
+    opacity: 1,
     y: 0,
     transition: {
       duration: 0.5,
@@ -134,7 +134,7 @@ export default function AnimatedBlogGrid({ blogs }) {
   }, [blogs]);
 
   const totalPages = Math.ceil(sortedBlogs.length / blogsPerPage);
-  
+
   const currentBlogs = useMemo(() => {
     const startIndex = (currentPage - 1) * blogsPerPage;
     const endIndex = startIndex + blogsPerPage;
@@ -163,7 +163,7 @@ export default function AnimatedBlogGrid({ blogs }) {
   const getPageNumbers = () => {
     const pages = [];
     const maxVisiblePages = 5;
-    
+
     if (totalPages <= maxVisiblePages) {
       for (let i = 1; i <= totalPages; i++) {
         pages.push(i);
@@ -191,30 +191,30 @@ export default function AnimatedBlogGrid({ blogs }) {
         pages.push(totalPages);
       }
     }
-    
+
     return pages;
   };
 
   return (
-    <motion.div 
+    <motion.div
       className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.6 }}
     >
       <div className="max-w-7xl mx-auto">
-        <motion.div 
+        <motion.div
           className="text-center mb-12"
           initial="hidden"
           animate="visible"
         >
-          <motion.h1 
+          <motion.h1
             className="text-4xl font-bold bg-gradient-to-r from-blue-900 to-cyan-400 bg-clip-text text-transparent mb-4"
             variants={titleVariants}
           >
             Orthopedic Health Insights
           </motion.h1>
-          <motion.p 
+          <motion.p
             className="text-xl text-gray-700 max-w-3xl mx-auto"
             variants={subtitleVariants}
           >
@@ -229,9 +229,9 @@ export default function AnimatedBlogGrid({ blogs }) {
             Showing {Math.min((currentPage - 1) * blogsPerPage + 1, sortedBlogs.length)}-{Math.min(currentPage * blogsPerPage, sortedBlogs.length)} of {sortedBlogs.length} articles
           </motion.div>
         </motion.div>
-        
+
         <AnimatePresence mode="wait">
-          <motion.div 
+          <motion.div
             key={currentPage}
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
             variants={containerVariants}
@@ -240,8 +240,8 @@ export default function AnimatedBlogGrid({ blogs }) {
             exit="exit"
           >
             {currentBlogs.map((blog, index) => (
-              <motion.article 
-                key={`${blog.id}-${currentPage}`} 
+              <motion.article
+                key={`${blog.id}-${currentPage}`}
                 className="bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer"
                 variants={cardVariants}
                 whileHover="hover"
@@ -249,10 +249,10 @@ export default function AnimatedBlogGrid({ blogs }) {
                 itemType="https://schema.org/BlogPosting"
                 layout
               >
-                <motion.div 
-                  className="relative aspect-square w-full overflow-hidden" 
-                  itemProp="image" 
-                  itemScope 
+                <motion.div
+                  className="relative aspect-[3/2] w-full overflow-hidden"
+                  itemProp="image"
+                  itemScope
                   itemType="https://schema.org/ImageObject"
                 >
                   <motion.div
@@ -260,8 +260,8 @@ export default function AnimatedBlogGrid({ blogs }) {
                     whileHover="hover"
                     className="w-full h-full"
                   >
-                    <Image 
-                      src={blog.image || '/images/placeholder.jpg'} 
+                    <Image
+                      src={blog.image || '/images/placeholder.jpg'}
                       alt={blog.alt || blog.title}
                       fill
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -271,21 +271,21 @@ export default function AnimatedBlogGrid({ blogs }) {
                   </motion.div>
                   <meta itemProp="url" content={blog.image} />
                 </motion.div>
-                
-                <motion.div 
+
+                <motion.div
                   className="p-6"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.1 + 0.5 }}
                 >
-                  <motion.div 
+                  <motion.div
                     className="flex items-center mb-3"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: index * 0.1 + 0.6 }}
                   >
-                    <time 
-                      dateTime={new Date(blog.date).toISOString()} 
+                    <time
+                      dateTime={new Date(blog.date).toISOString()}
                       itemProp="datePublished"
                       className="text-sm text-gray-500"
                     >
@@ -296,9 +296,9 @@ export default function AnimatedBlogGrid({ blogs }) {
                       {blog.author || "Dr. Abhishek Saxena"}
                     </span>
                   </motion.div>
-                  
-                  <motion.h2 
-                    className="text-2xl font-bold text-gray-900 mb-3 hover:text-blue-700 transition-colors duration-300" 
+
+                  <motion.h2
+                    className="text-2xl font-bold text-gray-900 mb-3 hover:text-blue-700 transition-colors duration-300"
                     itemProp="headline"
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -308,9 +308,9 @@ export default function AnimatedBlogGrid({ blogs }) {
                       {blog.heading}
                     </Link>
                   </motion.h2>
-                  
-                  <motion.p 
-                    className="text-gray-700 mb-4" 
+
+                  <motion.p
+                    className="text-gray-700 mb-4"
                     itemProp="description"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
@@ -318,16 +318,16 @@ export default function AnimatedBlogGrid({ blogs }) {
                   >
                     {blog.excerpt || blog.content?.substring(0, 120)}...
                   </motion.p>
-                  
-                  <motion.div 
+
+                  <motion.div
                     className="flex flex-wrap gap-2 mb-4"
                     initial="hidden"
                     animate="visible"
                     transition={{ staggerChildren: 0.1, delayChildren: index * 0.1 + 0.9 }}
                   >
                     {blog.tags && blog.tags.map((tag, tagIndex) => (
-                      <motion.span 
-                        key={tagIndex} 
+                      <motion.span
+                        key={tagIndex}
                         className="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full"
                         variants={tagVariants}
                         whileHover={{ scale: 1.1 }}
@@ -337,7 +337,7 @@ export default function AnimatedBlogGrid({ blogs }) {
                       </motion.span>
                     ))}
                   </motion.div>
-                  
+
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -365,7 +365,7 @@ export default function AnimatedBlogGrid({ blogs }) {
 
         {/* Pagination */}
         {totalPages > 1 && (
-          <motion.div 
+          <motion.div
             className="flex items-center justify-center mt-12 space-x-2"
             variants={paginationVariants}
             initial="hidden"
@@ -375,11 +375,10 @@ export default function AnimatedBlogGrid({ blogs }) {
             <motion.button
               onClick={handlePrevious}
               disabled={currentPage === 1}
-              className={`flex items-center px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${
-                currentPage === 1
+              className={`flex items-center px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${currentPage === 1
                   ? 'text-gray-400 cursor-not-allowed bg-gray-100'
                   : 'text-gray-700 bg-white hover:bg-blue-50 hover:text-blue-600 shadow-sm'
-              }`}
+                }`}
               whileHover={currentPage !== 1 ? { scale: 1.05 } : {}}
               whileTap={currentPage !== 1 ? { scale: 0.95 } : {}}
             >
@@ -396,11 +395,10 @@ export default function AnimatedBlogGrid({ blogs }) {
                   ) : (
                     <motion.button
                       onClick={() => handlePageChange(page)}
-                      className={`px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${
-                        currentPage === page
+                      className={`px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${currentPage === page
                           ? 'bg-gradient-to-r from-blue-900 to-cyan-400 text-white shadow-lg'
                           : 'text-gray-700 bg-white hover:bg-blue-50 hover:text-blue-600 shadow-sm'
-                      }`}
+                        }`}
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.95 }}
                       initial={{ opacity: 0, scale: 0.8 }}
@@ -418,11 +416,10 @@ export default function AnimatedBlogGrid({ blogs }) {
             <motion.button
               onClick={handleNext}
               disabled={currentPage === totalPages}
-              className={`flex items-center px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${
-                currentPage === totalPages
+              className={`flex items-center px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${currentPage === totalPages
                   ? 'text-gray-400 cursor-not-allowed bg-gray-100'
                   : 'text-gray-700 bg-white hover:bg-blue-50 hover:text-blue-600 shadow-sm'
-              }`}
+                }`}
               whileHover={currentPage !== totalPages ? { scale: 1.05 } : {}}
               whileTap={currentPage !== totalPages ? { scale: 0.95 } : {}}
             >
