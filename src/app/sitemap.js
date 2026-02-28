@@ -142,6 +142,7 @@ export default async function sitemap() {
     "/blog/knee-pain-causes-advanced-treatment-options-ajmer",
     "/blog/post-fracture-recovery-tips-orthopedic-guide-ajmer",
     "/blog/how-to-speed-up-bone-healing-after-fracture-expert-tips-ajmer",
+    "/blog/spine-specialist-back-pain-slip-disc-treatment-ajmer-dr-abhishek-saxena",
   ].map((path) => ({
     url: `${baseUrl}${path}`,
     lastModified: currentDate,
