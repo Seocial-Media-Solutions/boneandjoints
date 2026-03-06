@@ -143,6 +143,7 @@ export default async function sitemap() {
     "/blog/post-fracture-recovery-tips-orthopedic-guide-ajmer",
     "/blog/how-to-speed-up-bone-healing-after-fracture-expert-tips-ajmer",
     "/blog/spine-specialist-back-pain-slip-disc-treatment-ajmer-dr-abhishek-saxena",
+    "/blog/best-exercises-strong-bones-healthy-joints",
   ].map((path) => ({
     url: `${baseUrl}${path}`,
     lastModified: currentDate,
