@@ -331,18 +331,15 @@ export default function Home() {
           __html: JSON.stringify(structuredData),
         }}
       />
-
       <ImageSlider />
       <AbhishekHomeSection />
-
-
       <StatsComponent />
       <Suspense fallback={<div>Loading expertise section...</div>}>
-        <ExpertiseSection />
+      <ExpertiseSection />
       </Suspense>
       <WhyChooseUs />
       <Suspense fallback={<div>Loading Gallery section...</div>}>
-        <ImageGallerySlider />
+      <ImageGallerySlider />
       </Suspense>
       <AllCondition />
       <ElfsightWidget />

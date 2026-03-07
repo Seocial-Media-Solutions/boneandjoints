@@ -19,7 +19,49 @@ const DeekshitaHomeSection = () => {
             ref={sectionRef}
             className="relative py-20 overflow-hidden bg-[#f8f9fc]"
         >
+
+            <Link
+                href="/about-dikshita"
+                className="
+        flex items-center justify-center gap-2
+        w-full sm:w-auto
+        text-gray-900
+        px-5 sm:px-6 lg:px-8
+        py-3 sm:py-3.5 lg:py-4
+        text-sm sm:text-base
+        
+        font-bold
+        shadow-lg
+        hover:shadow-cyan-500/30
+        transition-all duration-300
+        transform hover:-translate-y-1
+        text-center
+        break-words
+        mb-10
+        lg:mb-20 
+      "
+            >
+                <span className="whitespace-normal text-center">
+                    Physiotherapist Services
+                </span>
+
+                <svg
+                    className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                >
+                    <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2.5}
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                </svg>
+            </Link>
+
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
                 <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
 
                     {/* Image Column */}
@@ -146,7 +188,7 @@ const DeekshitaHomeSection = () => {
                                 href="/about-dikshita"
                                 className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-cyan-500 text-white px-8 py-4 rounded-full font-bold shadow-lg hover:shadow-cyan-500/30 transition-all duration-300 transform hover:-translate-y-1"
                             >
-                                Learn More About Dr. Yadav
+                                Learn More
                                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                                 </svg>
