@@ -334,7 +334,7 @@ export default function Home() {
 
       <ImageSlider />
       <AbhishekHomeSection />
-      <DeekshitaHomeSection />
+
 
       <StatsComponent />
       <Suspense fallback={<div>Loading expertise section...</div>}>
@@ -348,6 +348,7 @@ export default function Home() {
       <ElfsightWidget />
       <AppointmentSection />
       <InstagramEmbed />
+      <DeekshitaHomeSection />
     </>
   );
 }
