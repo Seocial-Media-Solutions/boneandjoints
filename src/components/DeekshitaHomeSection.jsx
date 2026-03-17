@@ -41,7 +41,7 @@ const DeekshitaHomeSection = () => {
         lg:mb-20 
       "
             >
-                <span className="whitespace-normal text-center">
+                <span className="whitespace-normal text-center  float">
                     Physiotherapist Services
                 </span>
 

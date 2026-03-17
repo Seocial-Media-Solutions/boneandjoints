@@ -144,6 +144,7 @@ export default async function sitemap() {
     "/blog/how-to-speed-up-bone-healing-after-fracture-expert-tips-ajmer",
     "/blog/spine-specialist-back-pain-slip-disc-treatment-ajmer-dr-abhishek-saxena",
     "/blog/best-exercises-strong-bones-healthy-joints",
+    "/blog/best-exercises-strengthening-your-joints-and-bones",
   ].map((path) => ({
     url: `${baseUrl}${path}`,
     lastModified: currentDate,
