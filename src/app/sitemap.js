@@ -145,6 +145,7 @@ export default async function sitemap() {
     "/blog/spine-specialist-back-pain-slip-disc-treatment-ajmer-dr-abhishek-saxena",
     "/blog/best-exercises-strong-bones-healthy-joints",
     "/blog/best-exercises-strengthening-your-joints-and-bones",
+    "/blog/knee-pain-complete-guide-by-experienced-orthopedic-surgeon",
   ].map((path) => ({
     url: `${baseUrl}${path}`,
     lastModified: currentDate,
