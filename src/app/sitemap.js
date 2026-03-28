@@ -146,6 +146,8 @@ export default async function sitemap() {
     "/blog/best-exercises-strong-bones-healthy-joints",
     "/blog/best-exercises-strengthening-your-joints-and-bones",
     "/blog/knee-pain-complete-guide-by-experienced-orthopedic-surgeon",
+    "/blog/spine-pain-young-adults",
+    
   ].map((path) => ({
     url: `${baseUrl}${path}`,
     lastModified: currentDate,
