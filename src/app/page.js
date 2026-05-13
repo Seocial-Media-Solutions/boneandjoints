@@ -338,6 +338,7 @@ export default function Home() {
       <ExpertiseSection />
       </Suspense>
       <WhyChooseUs />
+      <DeekshitaHomeSection />
       <Suspense fallback={<div>Loading Gallery section...</div>}>
       <ImageGallerySlider />
       </Suspense>
@@ -345,7 +346,6 @@ export default function Home() {
       <ElfsightWidget />
       <AppointmentSection />
       <InstagramEmbed />
-      <DeekshitaHomeSection />
     </>
   );
 }
